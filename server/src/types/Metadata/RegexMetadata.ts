@@ -17,9 +17,9 @@
 import { ComplexMetadata } from './ComplexMetadata';
 
 type RegexData = {
-  regex: string;
+  regex?: string;
   fullMatch: string;
-  groups: string[];
+  groups?: string[];
   name: string;
   pageNumber: number;
 };
