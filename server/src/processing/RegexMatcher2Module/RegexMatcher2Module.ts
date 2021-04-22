@@ -73,13 +73,13 @@
            if (this.options.isGlobal) {
              // tslint:disable-next-line: no-conditional-assignment
              while ((result = re.exec(paragraph.toString()))) {
-               this.findWordsAndAddMetadata(paragraph, result, query, page.pageNumber());
+               this.findWordsAndAddMetadata(paragraph, result, query, page.pageNumber);
              }
            } else if (
              // tslint:disable-next-line: no-conditional-assignment
              (result = paragraph.toString().match(query.regex))
            ) {
-             this.findWordsAndAddMetadata(paragraph, result, query, page.pageNumber());
+             this.findWordsAndAddMetadata(paragraph, result, query, page.pageNumber);
            }
          }
          return page;
