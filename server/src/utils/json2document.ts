@@ -163,9 +163,10 @@ function constructMetadataObj(inputMetadata: JsonMetadata[], d: Document) {
       case 'regex': {
         const allElements2: Element[] = m.elements.map(e => d.getElementById(e));
         const md2: RegexMetadata = new RegexMetadata(allElements2, {
-          regex: m.data.regkeyElemex,
+          // regex: m.data.regkeyElemex,
           fullMatch: m.data.fullMatch,
-          groups: m.data.groups,
+          pageNumber: m.data.pageNumber,
+          // groups: m.data.groups,
           name: m.data.name,
         });
         allElements2.forEach(e => e.metadata.push(md2));
