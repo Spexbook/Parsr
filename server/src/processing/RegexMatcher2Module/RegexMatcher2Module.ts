@@ -45,7 +45,7 @@
 
      const metadata = new RegexMetadata(matchingWords, {
        name: query.label,
-       page: pageNumber,
+       pageNumber: pageNumber,
        // regex: query.regex,
        fullMatch: result[0],
        // groups: result.slice(1),
