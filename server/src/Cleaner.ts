@@ -73,6 +73,7 @@ export class Cleaner {
     TableDetectionModule,
     ImageDetectionModule,
     RegexMatcherModule,
+    RegexMatcher2Module,
     RemoteModule,
     SeparateWordsModule,
     TableOfContentsDetectionModule,
