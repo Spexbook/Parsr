@@ -30,6 +30,7 @@ import { PageNumberDetectionModule } from './processing/PageNumberDetectionModul
 import { ReadingOrderDetectionModule } from './processing/ReadingOrderDetectionModule/ReadingOrderDetectionModule';
 import { RedundancyDetectionModule } from './processing/RedundancyDetectionModule/RedundancyDetectionModule';
 import { RegexMatcherModule } from './processing/RegexMatcherModule/RegexMatcherModule';
+import { RegexMatcher2Module } from './processing/RegexMatcher2Module/RegexMatcher2Module';
 import { RemoteModule } from './processing/RemoteModule/RemoteModule';
 import { SeparateWordsModule } from './processing/SeparateWordsModule/SeparateWordsModule';
 import { TableDetection2Module } from './processing/TableDetection2Module/TableDetection2Module';
