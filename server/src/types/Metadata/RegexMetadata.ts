@@ -21,7 +21,7 @@ type RegexData = {
   fullMatch: string;
   groups?: string[];
   name: string;
-  pageNumber: number;
+  pageNumber?: number;
 };
 
 export class RegexMetadata extends ComplexMetadata<RegexData> {}
