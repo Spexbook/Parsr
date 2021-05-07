@@ -34,7 +34,7 @@ export class ProcessManager {
     process.env.NODE_DEBUG = 'pipeline';
 
     const args: string[] = [
-      '--max-old-space-size=4096',
+      '--max-old-space-size=8192',
       `../../dist/bin/index.js`,
       '--input-file',
       path.resolve(doc),
