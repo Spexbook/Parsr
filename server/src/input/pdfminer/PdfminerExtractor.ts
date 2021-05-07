@@ -41,11 +41,11 @@ export class PdfminerExtractor extends Extractor {
         const startTime: number = Date.now();
         const extractFont = extractImagesAndFonts(repairedPdf);
         const pdfminerExtract = await this.extractFile(repairedPdf, 1, 500, totalPages);
-        const extractSVGs = this.extractSVGPaths(repairedPdf, 1, 500, totalPages);
-        return Promise.all([pdfminerExtract, extractFont, extractSVGs]).then(
-          ([doc, assetsFolder, drawingsFile]: [Document, string, string]) => {
+        // const extractSVGs = this.extractSVGPaths(repairedPdf, 1, 500, totalPages);
+        return Promise.all([pdfminerExtract, extractFont]).then(
+          ([doc, assetsFolder]: [Document, string]) => {
             doc.assetsFolder = assetsFolder;
-            doc.drawingsFile = drawingsFile;
+            // doc.drawingsFile = drawingsFile;
             doc.inputFile = repairedPdf;
             const totalSeconds = (Date.now() - startTime) / 1000;
             logger.info(
